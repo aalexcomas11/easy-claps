@@ -1,0 +1,7 @@
+{
+  "editor.defaultFormatter": "vscode.configuration-editing",
+  "editor.formatOnSave": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.format.enable": true,
+  "eslint.enable": false
+}
