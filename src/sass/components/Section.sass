@@ -1,0 +1,43 @@
+@import '../main.sass'
+
+.clappy-section
+  border-radius: $border-rounded-least
+
+  @each $name, $color in $map-color
+    &__#{$name}
+      background: $color
+    
+  &__shadow
+    box-shadow: $box-shadow
+
+  @each $size,$value in $map-padding
+    &__padding-top-#{$size}
+      padding-top: $value
+
+  @each $size,$value in $map-padding
+    &__padding-bottom-#{$size}
+      padding-bottom: $value
+
+  @each $size,$value in $map-padding
+    &__padding-left-#{$size}
+      padding-left: $value
+
+  @each $size,$value in $map-padding
+    &__padding-right-#{$size}
+      padding-right: $value
+
+  @each $size,$value in $map-padding
+    &__margin-top-#{$size}
+      margin-top: $value
+
+  @each $size,$value in $map-padding
+    &__margin-bottom-#{$size}
+      margin-bottom: $value
+
+  @each $size,$value in $map-padding
+    &__margin-left-#{$size}
+      margin-left: $value
+
+  @each $size,$value in $map-padding
+    &__margin-right-#{$size}
+      margin-right: $value

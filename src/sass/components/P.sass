@@ -1,0 +1,110 @@
+@import '../main.sass'
+
+.clappy-paragraph
+
+  &__primary
+    color: $color-primary
+
+  &__secondary
+    color: $color-secondary
+
+  &__accent
+    color: $color-accent
+  
+  &__white
+    color: $color-white
+
+  &__light-grey
+    color: $color-light-grey
+
+  &__grey
+    color: $color-grey
+
+  &__dark-grey
+    color: $color-dark-grey
+
+  &__darker-grey
+    color: $color-darker-grey
+
+  &__xs
+    font-size: $font-size-xxxxs
+    font-weight: $font-weight-normal
+    line-height: calculate-line-height($font-size-xxxxl)
+  
+  &__sm
+    font-size: $font-size-xxxs
+    font-weight: $font-weight-normal
+    line-height: calculate-line-height($font-size-xxxs)
+  &__md
+    font-size: $font-size-xxs
+    font-weight: $font-weight-normal
+    line-height: calculate-line-height($font-size-xxs)
+  &__lg
+    font-size: $font-size-sm
+    font-weight: $font-weight-normal
+    line-height: calculate-line-height($font-size-sm)
+
+  &__xl
+    font-size: $font-size-md
+    font-weight: $font-weight-normal
+    line-height: calculate-line-height($font-size-md)
+
+  &__xs
+    font-size: $font-size-xxxxs
+    font-weight: $font-weight-normal
+    line-height: calculate-line-height($font-size-xxxxs)
+  
+  &__sm
+    font-size: $font-size-xxxs
+    font-weight: $font-weight-normal
+    line-height: calculate-line-height($font-size-xxxs)
+
+  &__md
+    font-size: $font-size-xxs
+    font-weight: $font-weight-normal
+    line-height: calculate-line-height($font-size-xxs)
+
+  &__lg
+    font-size: $font-size-sm
+    font-weight: $font-weight-normal
+    line-height: calculate-line-height($font-size-sm)
+
+  &__xl
+    font-size: $font-size-md
+    font-weight: $font-weight-normal
+    line-height: calculate-line-height($font-size-md)
+
+  @each $size,$value in $map-padding
+    &__padding-top-#{$size}
+      padding-top: $value
+
+  @each $size,$value in $map-padding
+    &__padding-bottom-#{$size}
+      padding-bottom: $value
+
+  @each $size,$value in $map-padding
+    &__padding-left-#{$size}
+      padding-left: $value
+
+  @each $size,$value in $map-padding
+    &__padding-right-#{$size}
+      padding-right: $value
+
+  @each $size,$value in $map-padding
+    &__margin-top-#{$size}
+      margin-top: $value
+
+  @each $size,$value in $map-padding
+    &__margin-bottom-#{$size}
+      margin-bottom: $value
+
+  @each $size,$value in $map-padding
+    &__margin-left-#{$size}
+      margin-left: $value
+
+  @each $size,$value in $map-padding
+    &__margin-right-#{$size}
+      margin-right: $value
+  
+
+  

@@ -21,7 +21,7 @@ const Header: React.FC<HeaderProps> = ({ className, color,tag,children,...rest})
     [className!]: className,
     [px(color!)]: color,
   })
-  console.log(rest.style)
+
   switch (tag) {
     case 'h1':
       return <h1 {...rest} className={classes}>{children}</h1>
@@ -58,7 +58,7 @@ export const Hx: React.FC<HxProps> = ({className,children,tag,style,lineHeight,m
   })
   const styles = {
     ...(lineHeight &&{lineHeight: fourDpUnit(lineHeight)}),
-   ...(marginBottom &&{lineHeight: fourDpUnit(marginBottom)}),
+   ...(marginBottom &&{marginBottom: fourDpUnit(marginBottom)}),
   }
   return (
     <Header style={styles} className={classes} tag={tag} {...rest}>
