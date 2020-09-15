@@ -6,7 +6,7 @@ import { startCase } from 'lodash'
  * @param className string to prefix class with
  */
 export const classPrefixer = (className: string) => {
-  return (str:string) => `${className}__${str}`
+  return (str:string, separator='__') => `${className}${separator}${str}`
 }
 
 /**

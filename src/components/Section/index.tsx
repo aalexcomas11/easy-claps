@@ -7,7 +7,7 @@ import { classPrefixer, spacingToClassnames, spacingToStylesDP } from '../../uti
 import '../../sass/components/Section.sass'
 
 
-interface SectionProps{
+export interface SectionProps{
   className?: string
   padding?: Padding
   margin?: Margin,

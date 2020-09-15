@@ -1,0 +1,114 @@
+@import '../main.sass'
+
+.clappy-grid
+  // grid base styles
+  display: flex
+  flex-wrap: wrap
+
+  &-gutters
+    margin: $margin-md 0 0 $margin-md
+
+  &-gutters > &__clappy-cell
+    padding: $padding-md 0 0 $padding-md
+
+  // align items by row
+  &-top
+    align-items: flex-start
+
+  &-bottom
+    align-items: flex-end
+
+  &-center
+    align-items: center
+
+  align items by clappy-cell
+  &__clappy-cell
+    flex: 1
+    
+    &-top
+      align-self: top
+
+    &-bottom
+      align-self: flex-end
+
+    &-center
+      align-self: center
+  
+  // set widths for clappy-cells per row
+  &-fit > &__clappy-cell
+    flex: 1
+    
+  &-full > &__clappy-cell
+    flex: 0 0 100%
+
+  &-half > &__clappy-cell
+    flex: 0 0 50%
+
+  &-quarter > &__clappy-cell
+    flex: 0 0 25%
+
+  @media(min-width: $media-query-phablet)
+    &-fit-sm > &__clappy-cell
+      flex: 1
+    
+    &-full-sm > &__clappy-cell
+      flex: 0 0 100%
+
+    &-half-sm > &__clappy-cell
+      flex: 0 0 50%
+
+    &-quarter-sm > &__clappy-cell
+      flex: 0 0 25%
+
+  @media(min-width: $media-query-laptop)
+    &-fit-lg > &__clappy-cell
+      flex: 1
+    
+    &-full-lg > &__clappy-cell
+      flex: 0 0 100%
+
+    &-half-lg > &__clappy-cell
+      flex: 0 0 50%
+
+    &-quarter-lg > &__clappy-cell
+      flex: 0 0 25%
+
+  // set widths per clappy-clappy-cell
+  &__clappy-clappy-cell-fit
+    flex: 1
+    
+  &__clappy-clappy-cell-full
+    flex: 0 0 100%
+
+  &__clappy-clappy-cell-half
+    flex: 0 0 50%
+
+  &__clappy-clappy-cell-fourth
+    flex: 0 0 25%
+
+  @media(min-width: $media-query-phablet)
+    &__clappy-clappy-cell-fit-sm
+      flex: 1
+    
+    &__clappy-clappy-cell-full-sm
+      flex: 0 0 100%
+
+    &__clappy-clappy-cell-half-sm
+      flex: 0 0 50%
+
+    &__clappy-clappy-cell-fourth-sm
+      flex: 0 0 25%
+
+  @media(min-width: $media-query-laptop)
+    &__clappy-clappy-cell-fit-lg
+      flex: 1
+    
+    &__clappy-clappy-cell-full-lg
+      flex: 0 0 100%
+
+    &__clappy-clappy-cell-half-lg
+      flex: 0 0 50%
+
+    &__clappy-clappy-cell-fourth-lg
+      flex: 0 0 25%
+  
